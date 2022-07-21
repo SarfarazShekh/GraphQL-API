@@ -20,3 +20,14 @@
         HotChocolate.Data.EntityFramework
 ###### Update Program.cs
         builder.Services.AddGraphQLServer().AddQueryType<Query>().AddProjections().AddFiltering().AddSorting();
+#### 5 Request Query 
+	query{
+		  superheroes{
+			 name,
+			 description,
+			 superpowers(order: {superPower:DESC}){
+				  superPower,
+				  description
+			}
+		  }
+		}	

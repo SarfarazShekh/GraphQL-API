@@ -3,8 +3,8 @@
 #### 1. Install All Necessary packeges 
      Install-Package Microsoft.EntityFrameworkCore
      Install-Package Microsoft.EntityFrameworkCore.SqlServer
-     Install-Package Microsoft.EntityFrameworkCore.Tools
-	 --Migrattion------------------------------
+     Install-Package Microsoft.EntityFrameworkCore.Tools    
+###### Migration
          Add-Migration Initial
          Update-Database		 
 		
@@ -18,5 +18,5 @@
 			app.MapGraphQL("/graphql");
 #### 4. For Applying Sorting, Projection, Filtering 
         HotChocolate.Data.EntityFramework
-	Update Program.cs
+###### Update Program.cs
         builder.Services.AddGraphQLServer().AddQueryType<Query>().AddProjections().AddFiltering().AddSorting();

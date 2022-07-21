@@ -31,3 +31,6 @@
 			}
 		  }
 		}	
+		
+#### 6 Brows URL
+     https://localhost:7203/graphql/
